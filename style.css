@@ -16,8 +16,14 @@ header {
   justify-content: space-between;
 }
 
+#header-logo {
+  max-width: 18.46%;
+  min-width: 130px;
+  aspect-ratio: 6.15 / 1;
+}
+
 #header-btn {
-  width: 9.38%;
+  min-width: 9.38%;
   background-color: white;
   border-color: hsl(321, 100%, 78%);
   color: hsl(321, 100%, 78%);
@@ -46,6 +52,8 @@ header {
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 45px;
+  text-align: center;
+  line-height: 54px;
 }
 
 #desc-1 {
@@ -54,8 +62,8 @@ h1 {
 }
 
 .btn {
-  width: 39.22%;
-  height: 80px;
+  min-width: 39.22%;
+  aspect-ratio: 5 / 1;
   background-color: hsl(322, 100%, 66%);
   border-radius: 40px;
   border-color: hsl(322, 100%, 66%);
@@ -97,7 +105,12 @@ h1 {
 #sect-3 {
   background-image: url("./images/bg-section-top-desktop-1.svg"),
     url("./images/bg-section-bottom-desktop-1.svg"),
-    linear-gradient(180deg, white 0% 15%, rgb(247, 251, 255) 16% 87%, white 88%);
+    linear-gradient(
+      180deg,
+      white 0px 165px,
+      rgb(247, 251, 255) 165px calc(100% - 139px),
+      white calc(100% - 139px)
+    );
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
 }
@@ -105,6 +118,7 @@ h1 {
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 36px;
+  line-height: 45px;
 }
 
 .illu {
@@ -119,7 +133,12 @@ h2 {
 #sect-5 {
   background-image: url("./images/bg-section-top-desktop-2.svg"),
     url("./images/bg-section-bottom-desktop-2.svg"),
-    linear-gradient(180deg, white 0% 15%, rgb(247, 251, 255) 16% 87%, white 88%);
+    linear-gradient(
+      180deg,
+      white 0px 156px,
+      rgb(247, 251, 255) 156px calc(100% - 139px),
+      white calc(100% - 139px)
+    );
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
 }
@@ -135,9 +154,10 @@ footer {
   gap: 20%;
 
   background-image: url("./images/bg-footer-top-desktop.svg"),
-    linear-gradient(180deg, white 0% 23%, hsl(192, 100%, 9%) 24%);
+    linear-gradient(180deg, white 0px 155px, hsl(192, 100%, 9%) 156px);
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100% 158px, auto auto;
 
   color: hsl(207, 100%, 98%);
 }
@@ -160,7 +180,7 @@ footer {
 }
 
 span {
-  margin-left: 20px;
+  margin-left: 4.85%;
 }
 
 #icons {
@@ -220,10 +240,10 @@ h3 {
 
 #sub-desc {
   max-width: 80%;
+  margin-bottom: 30px;
 }
 
 #subscribe {
-  margin-top: 30px;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -237,8 +257,9 @@ h3 {
 }
 
 #warning-msg {
+  order: 1;
   font-size: 16px;
-  margin-top: 10px;
+  margin: 10px 0px;
   color: red;
 }
 
@@ -255,12 +276,12 @@ h3 {
 }
 
 #sub-btn {
+  order: 1;
   width: 25%;
   background-color: hsl(322, 100%, 66%);
   border-radius: 5px;
   border-color: hsl(322, 100%, 66%);
   color: hsl(207, 100%, 98%);
-  font-size: 18px;
   font-weight: 700;
 }
 
@@ -268,4 +289,106 @@ h3 {
   background-color: hsla(322, 100%, 66%, 0.75);
   border-color: hsla(322, 100%, 66%, 0.75);
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  #desc-1 {
+    max-width: 100%;
+  }
+
+  #subscribe {
+    height: 100px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  #email {
+    width: 97%;
+    height: 50px;
+  }
+
+  #sub-btn {
+    width: 50%;
+    height: 50px;
+    align-self: end;
+  }
+
+  #warning-msg {
+    order: 0;
+  }
+}
+
+@media (max-width: 835px) {
+  footer {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  #footer-content-1 {
+    order: 0;
+    max-width: 100%;
+  }
+
+  #footer-content-2 {
+    max-width: 100%;
+  }
+
+  #subscribe {
+    flex-direction: row;
+  }
+
+  #sub-desc {
+    max-width: 100%;
+  }
+
+  #email {
+    width: 68%;
+    height: 44px;
+  }
+
+  #sub-btn {
+    width: 25%;
+    align-self: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #sect-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sect-t2 {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .illu {
+    max-width: 100%;
+  }
+
+  .illu-right {
+    order: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    gap: 90px;
+  }
+
+  #subscribe {
+    flex-direction: column;
+  }
+
+  #email {
+    width: 97%;
+    height: 50px;
+  }
+
+  #sub-btn {
+    width: 50%;
+    align-self: end;
+  }
 }
