@@ -1,0 +1,271 @@
+body {
+  margin: 0px;
+  background-color: white;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+  line-height: 27px;
+}
+
+header {
+  padding: 75px 4.86% 150px 4.86%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-btn {
+  width: 9.38%;
+  background-color: white;
+  border-color: hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  border-radius: 30px;
+}
+
+#header-btn:hover {
+  border-color: hsla(321, 100%, 78%, 0.75);
+  color: hsla(321, 100%, 78%, 0.75);
+  cursor: pointer;
+}
+
+.sect-t1 {
+  padding: 60px 14.58%;
+  display: flex;
+  gap: 110px;
+  flex-direction: column;
+}
+
+#texts-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+}
+
+#desc-1 {
+  max-width: 57.84%;
+  text-align: center;
+}
+
+.btn {
+  width: 39.22%;
+  height: 80px;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 40px;
+  border-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: hsla(322, 100%, 66%, 0.75);
+  border-color: hsla(322, 100%, 66%, 0.75);
+  cursor: pointer;
+}
+
+#sect-2 {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.count {
+  margin: 20px 0px 40px 0px;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.count-info {
+  text-align: center;
+  font-weight: 600;
+  color: hsla(192, 100%, 9%, 0.5);
+}
+
+.sect-t2 {
+  padding: 225px 9.03%;
+  display: flex;
+  gap: 11%;
+  align-items: center;
+}
+
+#sect-3 {
+  background-image: url("./images/bg-section-top-desktop-1.svg"),
+    url("./images/bg-section-bottom-desktop-1.svg"),
+    linear-gradient(180deg, white 0% 15%, rgb(247, 251, 255) 16% 87%, white 88%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+}
+
+.illu {
+  max-width: 50%;
+}
+
+.illu-right {
+  order: 1;
+  max-width: 40%;
+}
+
+#sect-5 {
+  background-image: url("./images/bg-section-top-desktop-2.svg"),
+    url("./images/bg-section-bottom-desktop-2.svg"),
+    linear-gradient(180deg, white 0% 15%, rgb(247, 251, 255) 16% 87%, white 88%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+#sect-t3 {
+  padding: 160px 14.58%;
+  text-align: center;
+}
+
+footer {
+  padding: 225px 9.03% 90px 9.03%;
+  display: flex;
+  gap: 20%;
+
+  background-image: url("./images/bg-footer-top-desktop.svg"),
+    linear-gradient(180deg, white 0% 23%, hsl(192, 100%, 9%) 24%);
+  background-repeat: no-repeat;
+  background-position: top;
+
+  color: hsl(207, 100%, 98%);
+}
+
+#footer-content-1 {
+  max-width: 35%;
+  order: -1;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-content-2 {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  margin: 10px 0px;
+}
+
+span {
+  margin-left: 20px;
+}
+
+#icons {
+  margin-top: 50px;
+  display: flex;
+  gap: 7%;
+}
+
+#facebook-icon {
+  background-image: linear-gradient(
+      90deg,
+      white 0% 30%,
+      transparent 31% 69%,
+      white 70% 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      white 0% 5%,
+      transparent 6% 90%,
+      white 90% 100%
+    );
+}
+
+#facebook-icon:hover {
+  fill: cyan;
+  background-image: linear-gradient(
+      90deg,
+      cyan 0% 30%,
+      transparent 31% 69%,
+      cyan 70% 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      cyan 0% 5%,
+      transparent 6% 90%,
+      cyan 90% 100%
+    );
+}
+
+#instagram-icon:hover {
+  fill: cyan;
+}
+
+#twitter-icon {
+  background-color: white;
+}
+
+#twitter-icon:hover {
+  background-color: cyan;
+}
+
+h3 {
+  margin: 5px 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+}
+
+#sub-desc {
+  max-width: 80%;
+}
+
+#subscribe {
+  margin-top: 30px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#email {
+  width: 68%;
+  border-radius: 5px;
+  padding-left: 2%;
+  font-size: 18px;
+}
+
+#warning-msg {
+  font-size: 16px;
+  margin-top: 10px;
+  color: red;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.error {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#sub-btn {
+  width: 25%;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 5px;
+  border-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#sub-btn:hover {
+  background-color: hsla(322, 100%, 66%, 0.75);
+  border-color: hsla(322, 100%, 66%, 0.75);
+  cursor: pointer;
+}
